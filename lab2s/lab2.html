@@ -50,19 +50,19 @@ $scope.selectItem=""
 <th>Item</th>
 </tr>
 <tr ng-repeat="items in shoppingItems">
-<td>{{$index+1}}</td>
+<td>{{index+1}}</td>
 <td>{{items}}</td>
 </tr>
 </table>
 <br/>
 <div>
 Enter an Item to Add: <input type="text" ng-model="newItem">
-<button ng-click="addItem()">Add Item</button>
+<button ng-click="addItem">Add Item</button>
 </div>
 <div>
 Select an Item to Remove:
 <select ng-model="selectItem" ng-options="item for item in shoppingItems"></select>
-<button ng-click="removeItem()">Remove Item</button>
+<button ng-click="removeItem">Remove Item</button>
 </div>
 </div>
 </body>
